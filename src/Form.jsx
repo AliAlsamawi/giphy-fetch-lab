@@ -9,8 +9,9 @@ function Form(props) {
     props.handleSubmit(giphyTitle)
     setGiphyTitle('')
   };
-  const realoadPage = ()=>{
+  const reloadPage = ()=>{
     window.location.reload();
+
   }
 
   const handleChange = e => {
@@ -30,7 +31,7 @@ function Form(props) {
             onChange={handleChange}
           />
           <input type="submit" value="Find Giphy Info" />
-          <button onClick={realoadPage} > Make Api Call Again </button>
+          <button onClick={reloadPage}> Make Api Call Again </button>
           <h1>Pull random gifs from Giphy</h1>
         </form>
       </>
